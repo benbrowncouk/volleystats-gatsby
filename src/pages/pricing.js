@@ -93,11 +93,11 @@ class Homepage extends React.Component {
                         <li>A full DataVolley scout file</li>
                         <li>Performance Analysis Reports (all supplied as PDF)</li>
                         <ul class="second">
-                          <li><Link to={matchReport} target="_blank">A full DataVolley match report (*)</Link></li>
-                          <li><Link to={attackDirectionSR} target="_blank">Attacks after receive by rotation report (*)</Link></li>
-                          <li><Link to={attackDirectionTrans} target="_blank">Attacks during transition by rotation report (*)</Link></li>
-                          <li><Link to={stats} target="_blank">Passing Stats report (*)</Link></li>
-                          <li><Link to={distribution} target="_blank">Setter distribution report (*)</Link></li>
+                          <li><a href={matchReport} target="_blank">A full DataVolley match report (*)</a></li>
+                          <li><a href={attackDirectionSR} target="_blank">Attacks after receive by rotation report (*)</a></li>
+                          <li><a href={attackDirectionTrans} target="_blank">Attacks during transition by rotation report (*)</a></li>
+                          <li><a href={stats} target="_blank">Passing Stats report (*)</a></li>
+                          <li><a href={distribution} target="_blank">Setter distribution report (*)</a></li>
                         </ul>
                       </ul>
                       <p>(*) Please click on each report to see an example.</p>
