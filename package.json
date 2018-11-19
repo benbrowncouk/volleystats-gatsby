@@ -1,0 +1,36 @@
+{
+  "name": "volleystats-gatsby",
+  "description": "Gatsby version of VolleyStats.co.uk",
+  "version": "1.0.0",
+  "author": "Ben Brown <ben@ben-brown.co.uk>",
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve"
+  },
+  "dependencies": {
+    "gatsby": "^2.0.50",
+    "gatsby-cli": "^2.4.5",
+    "gatsby-plugin-google-analytics": "^2.0.7",
+    "gatsby-plugin-manifest": "^2.0.2",
+    "gatsby-plugin-offline": "^2.0.5",
+    "gatsby-plugin-react-helmet": "^3.0.0",
+    "gatsby-plugin-sass": "^2.0.1",
+    "gatsby-plugin-sitemap": "^2.0.2",
+    "jquery": "^3.3.1",
+    "node-sass": "^4.9.3",
+    "npm": "^6.4.1",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-helmet": "^5.2.0",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "prettier": "^1.14.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benbrowncouk/volleystats-gatsby.git"
+  }
+}
