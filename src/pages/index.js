@@ -3,7 +3,7 @@ import React from "react";
 import Layout from '../components/layout';
 import SimpleSlider from '../components/carousel'
 
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import silhouetteImage from '../assets/images/multiple-users-silhouette.png';
 import changeImage from '../assets/images/change.png';
@@ -11,7 +11,6 @@ import computerImage from '../assets/images/computer-service.png';
 
 class Homepage extends React.Component {
     render() {
-
         return (
             <Layout>
                 <section id="body">
@@ -21,7 +20,8 @@ class Homepage extends React.Component {
             		      <p>Perhaps we can help…</p>
                     </section>
                     <div className="photo-gallery">
-                      <SimpleSlider/>
+                      <SimpleSlider images={[this.props.data.imageOne.childImageSharp.fluid, this.props.data.imageTwo.childImageSharp.fluid,
+                        this.props.data.imageThree.childImageSharp.fluid, this.props.data.imageFour.childImageSharp.fluid, this.props.data.imageFive.childImageSharp.fluid]}/>
                     </div>
                     <div className="clear"></div>
                     <section className="third">
@@ -52,3 +52,33 @@ class Homepage extends React.Component {
 }
 
 export default Homepage;
+
+export const fluidImage = graphql`
+fragment fluidImage on File {
+  childImageSharp {
+    fluid(maxWidth: 800) {
+      ...GatsbyImageSharpFluid
+    }
+  }
+}
+`;
+
+export const pageQuery = graphql`
+  query {
+    imageOne: file(relativePath: { eq: "1.jpg" }) {
+    ...fluidImage
+    }
+    imageTwo: file(relativePath: { eq: "5.jpg" }) {
+      ...fluidImage
+    }
+    imageThree: file(relativePath: { eq: "3.jpg" }) {
+      ...fluidImage
+    }
+    imageFour: file(relativePath: { eq: "7.jpg" }) {
+      ...fluidImage
+    }
+    imageFive: file(relativePath: { eq: "8.jpg" }) {
+      ...fluidImage
+    }
+  }
+`;

@@ -10,7 +10,7 @@ class Header extends React.Component {
         return (
           <section id="header">
             <header>
-              <Link to="/" id="logo"><img src={logo} alt="Volleyball Scores Logo"/></Link>
+              <Link to="/" id="logo"><img src={logo} alt="VolleyStats Logo"/></Link>
               <nav>
                 <div id="menu-icon"><img src={menu} alt="Menu icon"/></div>
                 <ul>

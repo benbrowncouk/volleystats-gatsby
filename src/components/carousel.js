@@ -1,11 +1,7 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 
-import image1 from '../assets/images/slides/1.jpg';
-import image2 from '../assets/images/slides/5.png';
-import image3 from '../assets/images/slides/3.jpg';
-import image4 from '../assets/images/slides/7.jpg';
-import image5 from '../assets/images/slides/8.jpg';
+import Img from "gatsby-image";
 
 export default class SimpleSlider extends Component {
   render() {
@@ -23,19 +19,19 @@ export default class SimpleSlider extends Component {
       <div>
         <Slider {...settings}>
           <div>
-            <img src={image1} alt=""/>
+            <Img fluid={this.props.images[0]} alt="" />
           </div>
           <div>
-            <img src={image2} alt=""/>
+            <Img fluid={this.props.images[1]} alt="" />
           </div>
           <div>
-            <img src={image3} alt=""/>
+            <Img fluid={this.props.images[2]} alt="" />
           </div>
           <div>
-            <img src={image4} alt=""/>
+            <Img fluid={this.props.images[3]} alt="" />
           </div>
           <div>
-            <img src={image5} alt=""/>
+            <Img fluid={this.props.images[4]} alt="" />
           </div>
         </Slider>
       </div>

@@ -11,14 +11,8 @@ import rod from '../assets/images/us/rod.jpg'
 
 class Homepage extends React.Component {
     render() {
-        const siteTitle = "VolleyStats.co.uk - Volleyball Performance Analysis and Live Statistics";
-
         return (
             <Layout>
-                <Helmet title={siteTitle}>
-                  <meta name="google-site-verification" content="" />
-                </Helmet>
-
                 <section id="body">
                   <div className="full">
                     <h1>Who Are We?</h1>
