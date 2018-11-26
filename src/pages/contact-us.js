@@ -17,7 +17,7 @@ class Homepage extends React.Component {
                       <p>We always welcome enquiries, whether about output PDFs that you have received, a custom requirement you may have, or just for a quote. Please use this page to send us your enquiry.</p>
                     </section>
                   </div>
-                  <form method="post" action="#" name="volleystats-contact" data-netlify="true" data-netlify-honeypot="bot-field">
+                  <form method="post" name="volleystats-contact" data-netlify-honeypot="bot-field" netlify>
                     <input type="hidden" name="bot-field" />
                     <div className="field half first">
                         <label htmlFor="name">Name</label>
