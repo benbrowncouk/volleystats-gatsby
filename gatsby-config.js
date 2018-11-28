@@ -31,9 +31,6 @@ module.exports = {
         respectDNT: true,
         // Avoids sending pageview hits from custom paths
         exclude: [],
-        // Any additional create only fields (optional)
-        sampleRate: 5,
-        siteSpeedSampleRate: 10,
         cookieDomain: "volleystats.co.uk",
       },
     },
