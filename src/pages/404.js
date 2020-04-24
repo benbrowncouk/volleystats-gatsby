@@ -1,13 +1,7 @@
 import React from "react";
 
 import Layout from '../components/layout';
-import SimpleSlider from '../components/carousel'
-
-import { Link, graphql } from "gatsby"
-
-import silhouetteImage from '../assets/images/multiple-users-silhouette.png';
-import changeImage from '../assets/images/change.png';
-import computerImage from '../assets/images/computer-service.png';
+import { Link } from "gatsby";
 
 class Homepage extends React.Component {
     render() {

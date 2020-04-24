@@ -1,7 +1,7 @@
 {
   "name": "volleystats-gatsby",
   "description": "Gatsby version of VolleyStats.co.uk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Ben Brown <ben@ben-brown.co.uk>",
   "scripts": {
     "develop": "gatsby develop",
